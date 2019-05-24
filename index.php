@@ -96,10 +96,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 350px; padding: 50px;
+        background-color: white; 
+        margin-top: 40px;
+        margin-left: 40px; 
+}
+#img {
+
+    background-image: url("1.jpg");
+  background-size: cover;
+}
+
     </style>
 </head>
-<body>
+<body id="img">
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
