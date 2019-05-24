@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: Todolistapp.php");
+    header("location: To-do.php");
     exit;
 }
 ?>
@@ -24,9 +24,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to your To Do List App.</h1>
     </div>
     <p>
+        <br><br>
+                <a href="https://todoapp-php-v1.herokuapp.com/index.php?delete=1&task=one&duedate=132" class="btn btn-success">To Do App </a>
+<br><br><br><br>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-        <a href="Todolistapp.php">To Do App </a>
     </p>
 </body>
 </html>
