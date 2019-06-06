@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: todo.php");
+    header("location: todoV2.php");
     exit;
 }
 ?>
@@ -32,7 +32,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
     <p>
         <br><br>
-                <a href="todo.php" class="btn btn-success">To Do App </a>
+                <a href="todoV2.php" class="btn btn-success">To Do App </a>
 <br><br><br><br>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
